@@ -7,11 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ADO\" />
-    <Folder Include="Service\Contract\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="ADO.Net.Client.Core" Version="1.4.5" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
   </ItemGroup>

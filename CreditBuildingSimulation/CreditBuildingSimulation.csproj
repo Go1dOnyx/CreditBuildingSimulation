@@ -12,6 +12,11 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Service\Contract\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CreditBuildingSimulation.DataAccess.ADO\CreditBuildingSimulation.DataAccess.ADO.csproj" />
   </ItemGroup>
 
 </Project>

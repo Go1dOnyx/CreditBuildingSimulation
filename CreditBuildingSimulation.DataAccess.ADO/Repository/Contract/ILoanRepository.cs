@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CreditBuildingSimulation.Models;
 
 namespace CreditBuildingSimulation.DataAccess.ADO.Repository.Contract
 {
-    internal interface ILoanRepository
+    public interface ILoanRepository
     {
+        Task<Loans> CreateAsync(Loans loan);
+        Task<Loans> DeleteLoans(Loans loan);
+        Task<Loans> UpdateAsync(Loans loan);
+        Task<Loans> GetByIdAsync(Guid loanID);
+        Task<List<Loans>> GetAllAsync();
+
     }
 }
